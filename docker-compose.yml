@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  tmux-vim:
+    build: .
+    container_name: tmux-vim
+    volumes:
+      - ./.tmux.conf:/root/.tmux.conf
+    tty: true
+
